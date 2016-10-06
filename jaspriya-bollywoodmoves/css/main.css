@@ -1,0 +1,707 @@
+/* ==========================================================================
+ General and Typography 
+========================================================================== */
+body {
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust:100%;
+}
+img {
+    max-height:100%;
+    max-width:100%;
+}
+
+
+#header .banner h1{
+    font-family: 'Rock Salt', cursive;
+    text-shadow:3px 3px black;
+}
+
+.navbar-brand h2 {
+    font-family: 'alba super', serif;
+}
+
+
+
+/* ==========================================================================
+ Header 
+========================================================================== */
+
+
+#header {
+    background-image: url("../img/dance4.jpg");
+    background-size: 1920px 600px;
+    background-position:center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    max-height: 600px;
+    
+}
+
+
+
+.bg-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:0;
+    background:none no-repeat scroll 0% 0% rgba(9,41,56,0.2);
+    
+}
+.banner {
+	
+	padding-top:200px;
+	text-align:right;
+	
+}
+
+
+#header .banner h1 {
+    font-size: 90px;
+    color:white;
+    font-weight:900;
+    padding: 5px;
+    margin:5px; 
+    position:relative; 
+    top:0px; 
+}
+
+/* ==========================================================================
+ Navigation 
+========================================================================== */
+#menu {
+    margin-bottom:0;
+    border-color: #0065B0;
+    background: #0065B0;
+    font:'Arial' sans-serif;
+}
+.navbar-brand h2 {
+    margin-top:0;
+    font-weight:bold;
+    text-shadow: none;
+}
+.navbar-brand {
+    padding-top:8px;
+    padding-bottom:0;
+}
+.navbar-inverse .navbar-nav>li>a {
+    -webkit-transition:all 0.1s;
+    -moz-transition:all 0.1s;
+    -o-transition:all 0.1s;
+    transition:all 0.1s;
+    font-weight:bold;
+    text-shadow: none;
+    letter-spacing:0.1em;
+}
+.navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>.active>a {
+    background: #70D1FF;
+    color:white;
+    text-shadow:none;
+    
+}
+
+.navbar-brand h2, .navbar-inverse .navbar-nav>li>a{
+    color: white;
+}
+.navbar-toggle {
+    font-size: 2.5em;
+    padding: 0px;
+    border: 0px;
+    margin: 0px 15px 0px 0px;
+    color: white;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background: transparent;
+    color: #70D1FF;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+ Video 
+========================================================================== */
+.green-wrapper{
+    background:#E6FAFC;
+    color:black;
+    letter-spacing:0.03em;
+    line-height:1.6em;
+    font-size:16px;
+    }
+.blue-wrapper{
+    background:#BBE7FC;
+    color:black;
+    letter-spacing:0.03em;
+    line-height:1.6em;
+    font-size:16px;
+    }
+h1.giant-heading {
+    font-size: 90px; 
+    font-family: 'Arial',sans-serif; 
+    font-weight: 600; 
+    margin: 5px; 
+    padding: 5px; 
+    line-height: 80%;
+    letter-spacing:0.01em;
+    color:white;
+}
+h3.video-heading {
+	font-size: 40px; 
+    font-family: 'Arial',sans-serif; 
+    font-weight: 600; 
+    margin: 5px; 
+    padding: 5px; 
+    line-height: 80%;
+    letter-spacing:0.01em;
+    color:#0065B0;
+}
+
+.video-container{
+    position: relative;
+    width: 100%;
+    height: 1px;
+    padding-bottom: 62.5%;
+}
+.video-container > video{
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    border:1px solid black;
+    background:gray;
+}
+
+/* ==========================================================================
+ Story 
+========================================================================== */
+.text-center {
+	font:'Arial', sans-serif;
+	color:#70D1FF;
+	font-size:35px;
+	letter-spacing:0.01em;
+	font-weight:700;
+	padding:5px;
+	text-align:center;
+	
+}
+.light-wrapper {
+    background: rgb(252,252,252);
+}
+.inner {
+    padding:20px;
+ 
+}
+
+/*======================================================================
+Services - Events & Dance Classes
+=======================================================================*/
+.section-title {
+    font-size: 35px;
+    color: #0065B0;
+    margin-bottom: 10px;
+    font-weight:600;
+    font-family: 'Arial',sans-serif;
+    margin-top: 10px;
+}
+
+
+p {
+    line-height: 1.6em;
+    font:'Arial', sans-serif;
+    font-size:16px;
+}
+
+
+/* ==========================================================================
+ Gallery 
+========================================================================== */
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+    margin: -0.135em;
+    width: 33.333%;
+    height: 512px;
+    background: #3085a3;
+    text-align: center;
+    float: left;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    opacity: 1;
+    max-width: initial !important;
+    max-height: initial !important;
+}
+
+.grid figure figcaption {
+    padding-top:200px;
+    color: #0065B0;
+    font-size: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align:center;
+}
+
+.grid figure figcaption,
+.grid figure a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    
+    font-weight: 800;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+/* Individual effects */
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+figure.effect-bubba {
+    background: #BBE7FC;
+}
+
+figure.effect-bubba img {
+    opacity:0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+    opacity: 0.3;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1,0);
+    transform: scale(1,0);
+}
+
+figure.effect-bubba h2 {
+    padding-top: 30%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,-20px,0);
+    transform: translate3d(0,-20px,0);
+    opacity:0;
+}
+
+figure.effect-bubba p {
+    padding: 20px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+
+
+@media screen and (max-width: 69.5em) {
+    .grid figure {
+        width: 50%;
+    }   
+
+    .grid figure figcaption {
+        font-size: 70%;
+    }
+}
+
+
+@media screen and (max-width: 41.5em) {
+
+    .grid figure {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+Events and Dance Classes 
+========================================================================== */
+.main.lead {
+    margin-bottom: 40px;
+}
+.lead {
+    font-size: 16px;
+    font-weight:normal;
+    color:black;
+    position:relative;
+    font:'Arial' sans-serif;
+    letter-spacing:0.01em;
+}
+
+.blog .left .news > img, .blog .right .news > img{
+    width: 55%;
+}
+
+.blog .right .news > img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+.blog .left .news > img {
+    float:right;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+.blog .left .news {
+    text-align:right;
+    padding-right: 40px;
+    
+}
+.blog .right .news {
+    padding-left: 40px;
+    text-align:left;
+    
+}
+.row.blog {
+    background-image: url(../img/page-divider.png);
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+.news h3 {
+    font-family: 'Arial',sans-serif;
+    font-size: 20px;
+    color: #0065B0;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+.news {
+    padding:30px;
+    font:'Arial' ,sans-serif;
+    font-size:16px;
+    color:black;
+    padding:10px;
+}
+
+
+
+/* ==========================================================================
+contact form and footer
+========================================================================== */
+#contact .container {
+	border:1px solid #0065B0;
+	width:50%;
+}
+.form:hover {
+	border:1px solid #0065B0;
+}
+.form {
+    z-index: 1000;
+    width: 100%;
+    padding: 8px;
+    background: none repeat scroll 0% 0% white;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom: 25px;
+    font-size: 16px;
+    transition: all 0.4s ease 0s;
+}
+.contact-wrapper {
+	background:#E6FAFC;
+	font-size:16px;
+	color:#0065B0;
+	padding:1em;
+	letter-spacing:0.01em;	
+}
+.contact-wrapper p {
+	font-size:16px;
+	font-weight:400;
+	letter-spacing:0.01em;
+	width:100%;
+	
+}
+h2.contact-heading {
+	text-align:center;
+	font-size:30px;
+	text-transform:uppercase;
+	width:100%;
+}
+.textarea {
+    height: 160px;
+	
+    
+}
+button, input, select {
+	line-height:normal;
+}
+button, input, select, textarea {
+	font:'Arial', sans-serif;
+	margin:0px;
+
+}
+input {
+	display:block;
+}
+.form-btn:hover {
+    background: none repeat scroll 0% 0% #70D1FF;
+    color: #FFF;
+    border: medium none;
+}
+.form-btn {
+    width: 150px;
+    display: block;
+    height: auto;
+    padding: 10px;
+    color:white;
+    background: none repeat scroll 0% 0% #0065B0;
+    border: medium none;
+    outline: medium none;
+    transition: all 0.3s ease 0s;
+    margin: auto;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+	font-size:20px;
+}
+
+.map-wrapper {
+	color:#0065B0;
+	font-weight:500;
+	font-size:16px;
+	background:#BBE7FC;
+	letter-spacing:0.01em;
+}
+
+.location {
+padding:20px;
+width:100%;
+}
+	
+.dark-wrapper {
+    background: #70D1FF;
+    color:white;
+    font-size: 16px;
+    font-weight:bold;
+    letter-spacing:0.04em;
+    text-align:center;
+    
+}
+.dark-wrapper .ss-style-top::before {
+    background-image:linear-gradient(315deg,#ed0121 50%,transparent 50%),linear-gradient(45deg,#ed0121 50%,transparent 50%);
+}
+
+.fb-icon {
+    
+    font-size:3em;
+    text-decoration:none;
+    color: white;
+    opacity:1;
+    -webkit-transition:opacity 350ms ease;
+    -moz-transition:opacity 350ms ease;
+    -o-transition:opacity 350ms ease;
+    transition:opacity 350ms ease;
+    
+}
+.fb-icon a:hover {
+    opacity:0.5;
+}
+
+footer {
+    margin: 0;
+    list-style: none;
+}
+footer a {
+    color: white;
+    transition: all 0.4s;
+}
+
+/* ==========================================================================
+ Responsive styles 
+========================================================================== */
+
+@media (max-width: 1199px){
+
+    h1.giant-heading {
+        font-size: 60px;
+    }
+	h3.video-heading {
+        font-size: 40px;
+    }
+    #info {
+	margin-left:20px;
+	}
+}
+
+
+@media (max-width: 991px){
+
+    h1.giant-heading {
+        font-size: 60px;
+    }
+    h3.video-heading {
+        font-size: 30px;
+    }
+	#info {
+	margin:10px;
+	width:100%;
+	}
+	.lead {
+		font-size:16px;
+	}
+	
+	
+}
+
+
+@media (max-width:767px) {
+    #header .banner h1 {
+        font-size:50px;
+    }
+    h3.video-heading {
+        font-size: 30px;
+    }
+    #info {
+	margin:10px;
+	width:100%;
+	}
+	#contact .container {
+	width:100%;
+	}
+    h1.giant-heading {
+        font-size: 60px;
+        text-align: center;
+    }
+	.text-center {
+		font-size:30px;
+	}
+	.lead {
+		font-size:16px;
+	}
+    .blog .left .news > img, .blog .right .news > img {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+    .news h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .news {
+        text-align: left !important;
+        padding: 0px !important;
+    }
+    .row.blog {
+        background: none;
+    }
+    .mb10{
+        margin-bottom: 10px;
+    
+        display: block;
+    }
+    .section-title {
+        font-size: 30px;
+    }
+    footer {
+        padding-left: 0;
+        margin-top: 20px;
+        border-top: 1px solid;
+        padding-top: 10px;
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+    }
+
+}
+@media (max-width: 480px){
+	#contact .container {
+	width:100%;
+	}
+	.lead {
+		font-size:16px;
+	}
+	.section-title {
+        font-size: 30px;
+    }
+    #info {
+    	margin:10px;
+    }
+}
+
