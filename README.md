@@ -1,2 +1,0 @@
-# jaspriyasingh.github.io
-Portfolio
