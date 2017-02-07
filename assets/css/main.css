@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400,400");
 
 
 /* Reset */
@@ -1635,9 +1635,9 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #585858;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
+		color: #000;
+		font-family: Helvetica, sans-serif;
+		font-size: 24px;
 		font-weight: 300;
 		line-height: 1.75;
 	}
@@ -1645,7 +1645,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 14pt;
+				font-size: 24px;
 			}
 
 		}
@@ -1653,7 +1653,7 @@
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 22px;
 			}
 
 		}
@@ -1664,14 +1664,15 @@
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
+		color: #000;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
-
+/*
 		a:hover {
 			border-bottom-color: transparent;
 			color: #f2849e !important;
 		}
+	*/
 
 	strong, b {
 		font-weight: 900;
@@ -1715,11 +1716,11 @@
 		}
 
 	h2, h3, h4, h5, h6 {
-		font-weight: 900;
+		font-weight: 500;
 		line-height: 1.5;
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 		text-transform: none;
-		letter-spacing: 0.1em;
+
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1727,7 +1728,7 @@
 		}
 
 	h2 {
-		font-size: 1.1em;
+		font-size: 1.2em;
 	}
 
 	h3 {
@@ -1838,7 +1839,7 @@
 	}
 
 	header p {
-		margin-top: -1em;
+		margin-top: 1em;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -2319,14 +2320,14 @@
 /* Image */
 
 	.image {
-		border-radius: 4px;
+		border-radius: 0px;
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
 		.image img {
-			border-radius: 4px;
+			border-radius: 0px;
 			display: block;
 		}
 
@@ -2607,7 +2608,7 @@
 				position: relative;
 				display: block;
 				width: 100%;
-				border-radius: 4px;
+				border-radius: 0px;
 				overflow: hidden;
 			}
 
@@ -2646,7 +2647,6 @@
 					-webkit-transition: opacity 0.5s ease;
 					-ms-transition: opacity 0.5s ease;
 					transition: opacity 0.5s ease;
-					content: '';
 					display: block;
 					position: absolute;
 					top: 0;
@@ -2683,14 +2683,14 @@
 				-ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
 				transition: background-color 0.5s ease, transform 0.5s ease;
 				position: absolute;
-				top: 0;
+				top:0;
 				left: 0;
 				width: 100%;
 				height: 100%;
-				padding: 1em;
-				border-radius: 4px;
+				padding: 2em;
+				border-radius: 0px;
 				border-bottom: 0;
-				color: #ffffff;
+				color: #000;
 				text-align: center;
 				text-decoration: none;
 				z-index: 3;
@@ -2700,12 +2700,13 @@
 					margin: 0;
 				}
 
-				.tiles article > a:hover {
+				.tiles article {
 					color: #ffffff !important;
 				}
 
 				.tiles article > a h2 {
-					margin: 0;
+					margin:0;
+					color:#000;
 				}
 
 				.tiles article > a .content {
@@ -2723,7 +2724,7 @@
 					.tiles article > a .content > :last-child {
 						margin-bottom: 0;
 					}
-
+/*
 			.tiles article.style1 > .image:before {
 				background-color: #f2849e;
 			}
@@ -2747,7 +2748,13 @@
 			.tiles article.style6 > .image:before {
 				background-color: #8499e7;
 			}
-
+*/
+			.captioninfo {
+				background-color: #ccc;
+				text-align: center;
+				padding: 30px 0 1px 0;
+				color:#000;
+			}
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
 				-webkit-transform: scale(1.1);
@@ -2764,10 +2771,7 @@
 					opacity: 0;
 				}
 
-			body:not(.is-touch) .tiles article:hover .content {
-				max-height: 15em;
-				opacity: 1;
-			}
+
 
 		* + .tiles {
 			margin-top: 2em;
@@ -2856,12 +2860,12 @@
 			border-bottom: 0;
 			color: navy;
 			font-weight: 800;
-			letter-spacing: 0.15em;
+			letter-spacing: 0.10em;
 			margin: 0 0 2.5em 0;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
-			font-size: 24px;
+			font-size: 30px;
 		}
 
 			#header .logo > * {
@@ -2914,7 +2918,7 @@
 						background-color: rgba(255, 255, 255, 0.5);
 						border-radius: 4px;
 						border: 0;
-						font-size: 0.8em;
+						font-size: 1em;
 						font-weight: 900;
 						letter-spacing: 0.35em;
 						text-transform: uppercase;
@@ -2990,6 +2994,7 @@
 		-ms-transition: opacity 0.45s ease;
 		transition: opacity 0.45s ease;
 		opacity: 1;
+		background-color: #f1f1f1;
 	}
 
 	#menu {
@@ -3350,3 +3355,8 @@
 			}
 
 		}
+
+		#canvas {
+	width:100%;
+	height:auto;
+}
